@@ -4,12 +4,15 @@ Supports IE10+. Pure JavaScript. Non-jQuery-dependent. CSS3 transition.
 [Slider Demo on CodePen] (http://codepen.io/fionnachan/pen/Qppdgj)
 
 #### For the DOM:
-```.slider
+```
+.slider
   <!-- repeat below for more slides-->
   .slide
     img(src="your-image-here")
     <!-- you can also have more <div/>s or <p/>s here for text--> 
   <!-- repeat above for more slides-->
+
+.dots-wrapper(id="dots-wrapper-4")
 ```
 
 #### For the script:
