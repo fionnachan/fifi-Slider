@@ -4,14 +4,13 @@ Supports IE10+. Pure JavaScript. Non-jQuery-dependent. CSS3 transition.
 [Slider Demo on CodePen] (http://codepen.io/fionnachan/pen/Qppdgj)
 
 #### For the DOM:
-<pre><div class="slider">
+```.slider
   <!-- repeat below for more slides-->
-  <div class="slide">
-    <img src="your-image-here"/>
-    <!-- you can also have more <div/>s or <p/>s here for text-->
-  </div>  
+  .slide
+    img(src="your-image-here")
+    <!-- you can also have more <div/>s or <p/>s here for text--> 
   <!-- repeat above for more slides-->
-</div></pre>
+```
 
 #### For the script:
 
