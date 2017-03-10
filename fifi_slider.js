@@ -130,9 +130,9 @@ fifi_slider = (function() {
       }
     }
 
-    window.onresize = on_resize(function () {
+    window.addEventListener("resize", on_resize(function () {
       _.updateSliderDimension();
-    });
+    }), false);
 
     // wrap slider-inner
     var nowHTML = _.def.target.innerHTML;
@@ -182,7 +182,9 @@ fifi_slider = (function() {
       });
     }
 
-    addListenerMulti(_.sliderInner, 'mousedown touchstart', startSwipe);
+    if (_.def.swipe) {
+      addListenerMulti(_.sliderInner, 'mousedown touchstart', startSwipe);
+    }
 
     _.isAnimating = false;
 
@@ -269,7 +271,7 @@ fifi_slider = (function() {
   fifi_slider.prototype.updateSliderDimension = function () {
     var _ = this;
 
-    _.slideW = $('.slide').offsetWidth;
+    _.slideW = parseInt(_.def.target.querySelectorAll('.slide')[0].offsetWidth);
     _.sliderInner.style.left = -_.slideW * _.curSlide + "px";
 
     if (_.def.autoHeight) {
@@ -281,7 +283,7 @@ fifi_slider = (function() {
         }
       }
     }
-  	_.def.afterChangeSlide(_);
+    _.def.afterChangeSlide(_);
   };
   return fifi_slider;
 })();
