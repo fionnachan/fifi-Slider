@@ -29,7 +29,7 @@ Supports IE10+. Pure JavaScript. Non-jQuery-dependent. CSS3 transition.
     easing: '' // CSS3 easing as 'linear' in transition: all 0.6s linear;
   },
   swipe: true, // haven't built arrows function yet, please don't turn it off before arrows are built
-  autoheight: true,
+  autoHeight: true,
   startSlide: 0, // from 0,
   afterChangeSlide: function afterChangeSlide() {} // customized callback after changing the slide
 });</pre>
