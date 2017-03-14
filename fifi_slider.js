@@ -49,7 +49,7 @@ fifi_slider = (function() {
         easing: ''
       },
       swipe: true,
-      autoheight: true,
+      autoHeight: true,
       startSlide: 0, // from 0,
       afterChangeSlide: function afterChangeSlide() {}
     };
@@ -266,6 +266,9 @@ fifi_slider = (function() {
       _.sliderInner.style.transition = '';
     }, _.def.transition.speed);
     _.setDot();
+    if (_.def.autoHeight) {
+      _.def.target.style.height = _.allSlides[_.curSlide].offsetHeight + "px";
+    }
     _.def.afterChangeSlide(_);
   };
   fifi_slider.prototype.updateSliderDimension = function () {
