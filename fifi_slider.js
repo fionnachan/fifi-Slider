@@ -122,11 +122,13 @@ fifi_slider = (function() {
         }
       }
       var img = el.querySelector('img');
-      img.onload = loadHandler;
-      img.src = img.getAttribute('data-src');
-      img.style.display = 'block';
-      if (img.complete) {
-        loadHandler();
+      if (img) {        
+        img.onload = loadHandler;
+        img.src = img.getAttribute('data-src');
+        img.style.display = 'block';
+        if (img.complete) {
+          loadHandler();
+        }
       }
     }
 
