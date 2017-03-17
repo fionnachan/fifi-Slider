@@ -2,6 +2,7 @@
 Supports IE10+. Pure JavaScript. Non-jQuery-dependent. CSS3 transition.
 
 [Slider Demo 1 on CodePen](http://codepen.io/fionnachan/pen/Qppdgj)
+
 [Slider Demo 2 on CodePen](http://codepen.io/fionnachan/pen/ryYrpP)
 
 #### For the DOM:
