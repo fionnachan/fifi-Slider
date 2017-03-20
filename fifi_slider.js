@@ -256,7 +256,7 @@ fifi_slider = (function() {
       delete _.moveY;
 
       _.isAnimating = false;
-      removeClass(_.sliderInner, 'isAnimating');
+      removeClass(_.def.target, 'isAnimating');
       removeListenerMulti(_.sliderInner, 'mousemove touchmove', swipeMove);
       removeListenerMulti($('body'), 'mouseup touchend', swipeEnd);
     }
