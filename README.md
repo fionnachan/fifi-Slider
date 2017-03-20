@@ -22,8 +22,8 @@ Supports IE10+. Pure JavaScript. Non-jQuery-dependent. CSS3 transition.
 <pre>var test_slider = new fifi_slider({
   target: document.querySelector('.slider'),
   dotsWrapper: document.querySelector('.dots-wrapper'),
-		arrowLeft: document.querySelector('.arrowLeft'), // build your own arrow and pass it in, the plugin will attach a click eventlistener
-		arrowRight: '', // leave it as '' if you don't need arrows
+  arrowLeft: document.querySelector('.arrowLeft'), // build your own arrow and pass it in, the plugin will attach a click eventlistener
+  arrowRight: '', // leave it as '' if you don't need arrows
   autoplay: { // autoplay function not built yet***
     on: false,
     interval: 1000 // in ms
