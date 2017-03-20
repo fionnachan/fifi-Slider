@@ -129,6 +129,8 @@ fifi_slider = (function() {
         if (img.complete) {
           loadHandler();
         }
+      } else {
+        _.updateSliderDimension();
       }
     }
 
